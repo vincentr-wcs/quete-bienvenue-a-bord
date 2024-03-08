@@ -12,6 +12,7 @@ header {
     height:50vh;
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 header nav img{
     width: 80px; 
@@ -21,7 +22,15 @@ header nav img{
 nav {
    display: flex;
    flex-direction: column;
-   align-items:center ;  
+   align-items:center ;
+}
+/* @media screen and (width >=992px) */
+@media screen and (min-width:992px) {
+    nav { 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
 }
 
 nav ul {
@@ -30,7 +39,6 @@ nav ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
     margin-top: 1rem;
 }
 
@@ -41,7 +49,7 @@ a {
 }
 
 .avatar img {
-    width: 15rem;
+    width: 13rem;
     border-radius: 50%;
     border: solid white;
 }
@@ -76,6 +84,70 @@ footer {
 
 }
 
-footer a{
+footer a {
     color: #A306B6;
 }
+
+article {
+    background-color:  #D9D9D9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+    margin-bottom: 1.5rem;  
+    /* même chose que les padding à la ligne 95 et 99 */
+    /* gap: 1.5rem; */
+    margin:1rem;
+    border-radius: 1rem;
+}
+
+article img {
+    height: 250px;
+    padding-bottom: 1.5rem;
+    
+}
+
+article h3 {
+    padding-bottom: 1.5rem;
+}
+
+article a{
+    background-color :#A306B6;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h2{
+    text-align: center;
+    margin: 1rem 0;
+    color: #A306B6;
+}
+
+/* autre moyen de centrer la première section 
+section {
+    width: 80%;
+    margin: 1rem auto;
+} */
+
+/* section p{
+    margin: 1rem;
+    max-width:65ch ;
+} */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.about p {
+    max-width: 65ch;
+    margin: 0 1rem;
+    
+}
+
+.about p:first-child {
+    margin-bottom: 1rem;
+}
+
